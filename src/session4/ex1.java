@@ -17,6 +17,7 @@ public class ex1 {
          System.out.print("Mảng sau khi đã sắp xếp theo thứ tự giảm dần: ");
          System.out.println(Arrays.toString(arr));
          System.out.print("Phần tử lớn nhất trong mảng là: " + arr[0]);
+         sc.close();
     }
 
     //hàm selectionSort
