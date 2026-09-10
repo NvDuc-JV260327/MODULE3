@@ -1,8 +1,7 @@
-package session9.ra.presentation;
+package session9.ex1.ra.presentation;
 
-import session9.ra.entity.Student;
+import session9.ex1.ra.entity.Student;
 
-import java.util.Locale;
 import java.util.Scanner;
 
 public class StudentManagement {

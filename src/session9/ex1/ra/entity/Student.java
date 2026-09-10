@@ -1,4 +1,4 @@
-package session9.ra.entity;
+package session9.ex1.ra.entity;
 
 import java.util.Scanner;
 
