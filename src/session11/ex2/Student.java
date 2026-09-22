@@ -1,14 +1,12 @@
 package session11.ex2;
 
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
-import java.util.stream.Collectors;
-
-class Student {
+public class Student {
     private String name;
     private int age;
     private double grade;
+
+    public Student() {
+    }
 
     public Student(String name, int age, double grade) {
         this.name = name;
@@ -20,14 +18,15 @@ class Student {
         return name;
     }
 
+    public int getAge() {
+        return age;
+    }
+
     public double getGrade() {
         return grade;
     }
 
-
     public void display() {
-        System.out.printf(  "| name : %20s | age : %5d | grade : %5f.2 |\n",name,age,grade);
+        System.out.printf("| Name: %20s | Age: %5d | Grade : %10f |\n", name, age, grade);
     }
 }
-
-

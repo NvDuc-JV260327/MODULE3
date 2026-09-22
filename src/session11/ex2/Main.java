@@ -22,13 +22,12 @@ public class Main {
         );
 
         // Lọc sinh viên có điểm lớn hơn 7.0 và sắp xếp theo tên
-        List<Student> filteredStudents = students.stream()
-                .filter(student -> student.getGrade() > 7.0)
-                .sorted(Comparator.comparing(Student::getName))
-                .toList();
+        List<Student> filteredStudents = students.stream().filter(student -> student.getGrade() > 7)
+                                        .sorted(Comparator.comparing(Student::getName)).toList();
 
         // In ra danh sách sinh viên đã lọc và sắp xếp
         System.out.println("Danh sách sinh viên có điểm lớn hơn 7.0, sắp xếp theo tên:");
         filteredStudents.forEach(Student::display);
+
     }
 }
